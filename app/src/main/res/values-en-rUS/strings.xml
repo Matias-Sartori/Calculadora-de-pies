@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Feet Calculator</string>
+    <string name="espesor">Thickness</string>
+    <string name="ancho">Width</string>
+    <string name="largo">Long</string>
+    <string name="cantidad">Quantity</string>
+    <string name="total_pies">Total Ft:</string>
+    <string name="limpiar_datos">Clean data</string>
+</resources>

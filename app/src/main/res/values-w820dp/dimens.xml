@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_pantalla">24dp</dimen>
+
+    <dimen name="texto_titulo">52sp</dimen>
+
+    <dimen name="texto_boton">32sp</dimen>
+
+    <dimen name="label_medida">32sp</dimen>
+
+    <dimen name="label_resultado">40sp</dimen>
+
+    <dimen name="ancho_min_boton">100dp</dimen>
+
+    <dimen name="alto_min_boton">72dp</dimen>
+
+    <dimen name="margen_boton">12dp</dimen>
+
+    <dimen name="padding_boton">12dp</dimen>
+
+    <dimen name="largo_texto">60dp</dimen>
+</resources>
