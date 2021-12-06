@@ -1,9 +1,11 @@
 <resources>
-    <string name="app_name">CalcularPies</string>
+    <string name="app_name">Calculadora de Pies</string>
     <string name="espesor">Espesor</string>
     <string name="ancho">Ancho</string>
     <string name="largo">Largo</string>
     <string name="cantidad">Cantidad</string>
     <string name="total_pies">Total Pies:</string>
     <string name="limpiar_datos">Limpiar datos</string>
+    <string name="pulgadas">Pulgadas</string>
+    <string name="metros">Mts</string>
 </resources>

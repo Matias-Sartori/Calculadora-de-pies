@@ -7,4 +7,6 @@
     <string name="cantidad">Quantity</string>
     <string name="total_pies">Total Ft:</string>
     <string name="limpiar_datos">Clean data</string>
+    <string name="pulgadas">Inch</string>
+    <string name="metros">Meters</string>
 </resources>

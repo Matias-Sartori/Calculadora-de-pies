@@ -36,7 +36,8 @@ public class MainActivity extends Activity
     private static final double CONSTANTE = 0.2734;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
@@ -137,8 +138,6 @@ public class MainActivity extends Activity
             @Override
             public void afterTextChanged(Editable s)
             {
-                System.out.println("Editable --> " + s);
-
                 calcularPies();
             }
         });
@@ -160,8 +159,6 @@ public class MainActivity extends Activity
             @Override
             public void afterTextChanged(Editable s)
             {
-                System.out.println("Editable --> " + s);
-
                 calcularPies();
             }
         });
@@ -183,30 +180,15 @@ public class MainActivity extends Activity
             @Override
             public void afterTextChanged(Editable s)
             {
-                System.out.println("Editable --> " + s);
-
                 calcularPies();
             }
         });
 
-        pickerCantidad.setValueChangedListener(new ValueChangedListener()
-        {
-            @Override
-            public void valueChanged(int value, ActionEnum action)
-            {
-                System.out.println("ActionEnum -> " + action);
-
-                calcularPies();
-            }
-        });
-
-
+        pickerCantidad.setValueChangedListener((value, action) -> calcularPies());
     }
 
     public void limpiarDatos(View view)
     {
-        System.out.println("LIMPIAR DATOS");
-
         this.txtEspesor.getText().clear();
         this.txtAncho.getText().clear();
         this.txtLargo.getText().clear();
@@ -214,5 +196,4 @@ public class MainActivity extends Activity
 
         this.txtEspesor.requestFocus();
     }
-
 }

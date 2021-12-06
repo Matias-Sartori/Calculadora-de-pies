@@ -24,13 +24,9 @@
 
     <Space
         android:layout_width="5dp"
-        android:layout_height="20dp"
+        android:layout_height="40dp"
         >
     </Space>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="20dp"></Space>
 
     <GridLayout
         android:layout_width="wrap_content"
@@ -156,7 +152,7 @@
 
     <Space
         android:layout_width="5dp"
-        android:layout_height="30dp"
+        android:layout_height="15dp"
         >
     </Space>
 
