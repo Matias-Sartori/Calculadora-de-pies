@@ -1,5 +1,6 @@
 package com.example.calcularpies;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
@@ -68,6 +69,24 @@ public class MainActivity extends Activity
         darListeners();
 
         calcularPies();
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle estado)
+    {
+        // guardamos el dato al bundle
+        estado.putString("totalpies", String.valueOf(totalPies.getText()));
+
+        // llamamos al metodo de la calse padre, pasandole nuestro bundle
+        super.onSaveInstanceState(estado);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState)
+    {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        totalPies.setText(savedInstanceState.getString("totalpies"));
     }
 
     class DecimalDigitsInputFilter implements InputFilter
