@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="titulo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/texto_titulo</item>
+    </style>
+
+    <style name="boton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/ancho_min_boton</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/alto_min_boton</item>
+        <item name="android:layout_margin">@dimen/margen_boton</item>
+        <item name="android:textSize">@dimen/texto_boton</item>
+    </style>
+
+    <style name="labelMedida">
+        <item name="android:textSize">@dimen/label_medida</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="texto">
+        <item name="android:layout_width">@dimen/largo_texto</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
+
+    <style name="labelTotalPies">
+        <item name="android:layout_width">@dimen/largo_texto</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textSize">@dimen/label_medida</item>
+    </style>
+
+    <style name="labelResultado">
+        <item name="android:layout_width">@dimen/largo_texto</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textSize">@dimen/label_resultado</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

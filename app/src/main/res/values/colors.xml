@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="naranja">#EFA116</color>
+    <color name="naranja_dark">#b77200</color>
+    <color name="naranja_light">#ffd250</color>
 </resources>

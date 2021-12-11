@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/black"
     tools:context=".MainActivity">
 
     <!--<ImageView
@@ -124,8 +123,6 @@
         android:layout_width="130dp"
         android:layout_height="40dp"
 
-
-
         />
 
     <Space
@@ -148,17 +145,16 @@
 
         <TextView
             android:id="@+id/labelTotalPies"
+            style="@style/labelResultado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="totalPies"
-            style="@style/labelResultado"/>
+            />
     </LinearLayout>
 
     <Space
         android:layout_width="5dp"
-        android:layout_height="30dp"
-        >
-    </Space>
+        android:layout_height="20dp"></Space>
 
     <Button
         android:id="@+id/btnLimpiar"
