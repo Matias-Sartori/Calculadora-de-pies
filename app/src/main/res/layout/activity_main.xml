@@ -1,167 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:gravity="bottom|end"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingLimpiarDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:contentDescription="@string/fab_descripcion"
+            android:focusable="true"
+            android:src="@drawable/ic_baseline_delete_forever_24"
+            android:onClick="limpiarDatos"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
-    <!--<ImageView
-        android:layout_width="120dp"
-        android:layout_height="100dp"
-        android:src="@drawable/logo"
-        ></ImageView>-->
-
-    <TextView
-        android:id="@+id/txtTitulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        style="@style/titulo"/>
-
-    <Space
-        android:layout_width="5dp"
-        android:layout_height="20dp"
-        >
-    </Space>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="20dp"></Space>
-
-    <GridLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:columnCount="3"
-        android:rowCount="3">
-
-        <TextView
-            android:id="@+id/labelEspesor"
-            style="@style/labelMedida"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/espesor" />
-
-        <EditText
-            android:id="@+id/txtEspesor"
-            style="@style/texto"
-            android:ems="10"
-            android:hint=""
-            android:inputType="numberDecimal"
-            android:text="" />
-
-        <TextView
-            android:id="@+id/labelMetros"
-            style="@style/labelMedida"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pulgadas" />
-
-        <TextView
-            android:id="@+id/labelAncho"
-            style="@style/labelMedida"
+        <Space
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/ancho" />
+            android:layout_height="10dp"></Space>
 
-        <EditText
-            android:id="@+id/txtAncho"
-            style="@style/texto"
-            android:hint=""
-            android:inputType="numberDecimal"
-            android:text="" />
-
-        <TextView
-            android:id="@+id/labelPulgadas"
-            style="@style/labelMedida"
+        <GridLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/pulgadas" />
+            android:columnCount="3"
+            android:rowCount="3">
+
+            <TextView
+                android:id="@+id/labelEspesor"
+                style="@style/labelMedida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/espesor" />
+
+            <EditText
+                android:id="@+id/txtEspesor"
+                style="@style/texto"
+                android:ems="10"
+                android:hint=""
+                android:inputType="numberDecimal"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/labelMetros"
+                style="@style/labelMedida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pulgadas" />
+
+            <TextView
+                android:id="@+id/labelAncho"
+                style="@style/labelMedida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ancho" />
+
+            <EditText
+                android:id="@+id/txtAncho"
+                style="@style/texto"
+                android:hint=""
+                android:inputType="numberDecimal"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/labelPulgadas"
+                style="@style/labelMedida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pulgadas" />
+
+            <TextView
+                android:id="@+id/labelLargo"
+                style="@style/labelMedida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/largo" />
+
+            <EditText
+                android:id="@+id/txtLargo"
+                style="@style/texto"
+                android:hint=""
+                android:inputType="numberDecimal"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/labelPulgadas2"
+                style="@style/labelMedida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/metros" />
+        </GridLayout>
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="20dp"
+            >
+        </Space>
 
         <TextView
-            android:id="@+id/labelLargo"
-            style="@style/labelMedida"
+            android:id="@+id/labelCantidad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/largo" />
+            android:text="@string/cantidad"
+            style="@style/labelMedida"/>
 
-        <EditText
-            android:id="@+id/txtLargo"
-            style="@style/texto"
-            android:hint=""
-            android:inputType="numberDecimal"
-            android:text="" />
-
-        <TextView
-            android:id="@+id/labelPulgadas2"
-            style="@style/labelMedida"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/metros" />
-
-
-    </GridLayout>
-
-    <Space
-        android:layout_width="5dp"
-        android:layout_height="20dp"
-        >
-    </Space>
-
-    <TextView
-        android:id="@+id/labelCantidad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cantidad"
-        style="@style/labelMedida"/>
-
-    <com.travijuu.numberpicker.library.NumberPicker
-        android:id="@+id/cantidadPicker"
-
-        android:layout_width="130dp"
-        android:layout_height="40dp"
-
-        />
-
-    <Space
-        android:layout_width="5dp"
-        android:layout_height="20dp"
-        >
-    </Space>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/total_pies"
-            style="@style/labelTotalPies"/>
-
-        <TextView
-            android:id="@+id/labelTotalPies"
-            style="@style/labelResultado"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="totalPies"
+        <com.travijuu.numberpicker.library.NumberPicker
+            android:id="@+id/cantidadPicker"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
             />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="20dp"
+            >
+        </Space>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_pies"
+                style="@style/labelTotalPies"/>
+
+            <TextView
+                android:id="@+id/labelTotalPies"
+                style="@style/labelResultado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="totalPies"
+                />
+        </LinearLayout>
+
     </LinearLayout>
 
-    <Space
-        android:layout_width="5dp"
-        android:layout_height="20dp"></Space>
-
-    <Button
-        android:id="@+id/btnLimpiar"
-        android:text="@string/limpiar_datos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="limpiarDatos"
-        style="@style/boton"/>
-
-</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

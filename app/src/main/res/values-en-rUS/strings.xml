@@ -9,4 +9,12 @@
     <string name="limpiar_datos">Clean data</string>
     <string name="pulgadas">Inch</string>
     <string name="metros">Meters</string>
+    <string name="fondo_pantalla">Theme</string>
+    <string name="seleccionar_tema">Select theme</string>
+    <string name="tema">Theme</string>
+    <string name="claro">Light</string>
+    <string name="oscuro">Dark</string>
+    <string name="aceptar">Ok</string>
+    <string name="cancelar">Cancel</string>
+    <string name="fab_descripcion">Clean data</string>
 </resources>

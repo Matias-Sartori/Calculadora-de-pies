@@ -8,4 +8,13 @@
     <string name="limpiar_datos">Limpiar datos</string>
     <string name="pulgadas">Pulgadas</string>
     <string name="metros">Mts</string>
+    <string name="fondo_pantalla">Fondo de pantalla</string>
+    <string name="seleccionar_tema">Seleccionar tema</string>
+    <string name="tema">Tema</string>
+    <string name="claro">Claro</string>
+    <string name="oscuro">Oscuro</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="fab_descripcion">Limpiar datos</string>
+
 </resources>
